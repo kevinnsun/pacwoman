@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/pacwoman.dir/src/main.cpp.o  -o pacwoman -rdynamic -lsfml-sfml -lsfml-window -lsfml-graphics -lsfml-audio -lsfml-network 
