@@ -4,7 +4,6 @@
 #include <SFML/Graphics.hpp>
 #include "GameState.hpp"
 
-
 class Game
 {
 public:

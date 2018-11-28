@@ -1,5 +1,8 @@
 #ifndef PACWOMAN_GAMESTATE_HPP
 #define PACWOMAN_GAMESTATE_HPP
+
+#include "PacWoman.hpp"
+#include "Ghost.hpp"
 #include <SFML/Graphics.hpp>
 
 class Game;
@@ -76,6 +79,9 @@ public:
   void update(sf::Time delta);
   void draw(sf::RenderWindow& window);
 
+private:
+  PacWoman m_pacWoman;
+  Ghost m_ghost;
 };
 
 class WonState : public GameState
@@ -88,6 +94,9 @@ public:
   void moveStick(sf::Vector2i direction);
   void update(sf::Time delta);
   void draw(sf::RenderWindow& window);
+
+private:
+  sf::Text m_text;
 };
 
 class LostState : public GameState
@@ -100,6 +109,11 @@ public:
   void moveStick(sf::Vector2i direction);
   void update(sf::Time delta);
   void draw(sf::RenderWindow& window);
+
+private:
+  sf::Text m_text;
+  sf::Time m_countdown;
+  sf::Text m_countdownText;
 };
 
 #endif // PACWOMAN_GAMESTATE_HPP

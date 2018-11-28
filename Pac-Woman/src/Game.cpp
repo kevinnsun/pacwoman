@@ -31,6 +31,7 @@ Game::~Game(){
 }
 
 void Game::run(){
+  sf::Clock frameClock;
   while(m_window.isOpen()){
     sf::Event event;
 
@@ -54,24 +55,12 @@ void Game::run(){
         }
 
     }
-    m_currentState->update(sf::seconds(1));
+    m_currentState->update(frameClock.restart());
     m_window.clear();
     m_currentState->draw(m_window);
     m_window.display();
   }
 }
-
-// void Game::insertCoin(){
-//   std::cout << "insertCoin" << std::endl;
-// }
-//
-// void Game::pressButton(){
-//   std::cout << "pressButton" << std::endl;
-// }
-//
-// void Game::moveStick(sf::Vector2i direction){
-//   std::cout << "move stick" << std::endl;
-// }
 
 void Game::changeGameState(GameState::State gameState){
   m_currentState = m_gameStates[gameState];
