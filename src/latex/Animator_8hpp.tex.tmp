@@ -1,0 +1,25 @@
+\hypertarget{Animator_8hpp}{}\section{Animator.\+hpp File Reference}
+\label{Animator_8hpp}\index{Animator.\+hpp@{Animator.\+hpp}}
+
+
+\char`\"{}\+Animator class -\/ handles game animations\char`\"{}  
+
+
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+Include dependency graph for Animator.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAnimator}{Animator}
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Animator Class\char`\"{}  \char`\"{}times animations for the sprites in the game\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Animator class -\/ handles game animations\char`\"{} 
+
+\begin{DoxyDate}{Date}
+\char`\"{}28/\+November/2018\char`\"{} 
+\end{DoxyDate}

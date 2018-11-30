@@ -1,0 +1,86 @@
+\hypertarget{classLostState}{}\section{Lost\+State Class Reference}
+\label{classLostState}\index{Lost\+State@{Lost\+State}}
+
+
+\char`\"{}\+Lost State Class\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Game\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Lost\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Lost\+State\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLostState_a48e846ea945ff11f7bda00e71a0cfd7d}{Lost\+State} (\hyperlink{classGame}{Game} $\ast$game, \hyperlink{classGameState}{Game\+State} $\ast$playing\+State)
+\begin{DoxyCompactList}\small\item\em \char`\"{}lost state construtor\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLostState_aa35179942033d9ab54fbcd7122f40497}\label{classLostState_aa35179942033d9ab54fbcd7122f40497}} 
+void \hyperlink{classLostState_aa35179942033d9ab54fbcd7122f40497}{insert\+Coin} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Lost state, insert\+Coin\char`\"{}  \char`\"{}when the user loses, reset the current level and reset the lives count\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLostState_ab0ec749961cfe909dc61289d14444a71}\label{classLostState_ab0ec749961cfe909dc61289d14444a71}} 
+void \hyperlink{classLostState_ab0ec749961cfe909dc61289d14444a71}{press\+Button} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for press button\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLostState_a62e42775734c1f6a7142a31fc0da3db4}\label{classLostState_a62e42775734c1f6a7142a31fc0da3db4}} 
+void \hyperlink{classLostState_a62e42775734c1f6a7142a31fc0da3db4}{move\+Stick} (sf\+::\+Vector2i direction)
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for movestick\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLostState_aad10ee73c9033421c643ffd1b81725f2}\label{classLostState_aad10ee73c9033421c643ffd1b81725f2}} 
+void \hyperlink{classLostState_aad10ee73c9033421c643ffd1b81725f2}{update} (sf\+::\+Time Delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}update on the lost state\char`\"{}  \char`\"{}update the lost state\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLostState_a3168ff8040afa8313bfe5229333b7d79}\label{classLostState_a3168ff8040afa8313bfe5229333b7d79}} 
+void \hyperlink{classLostState_a3168ff8040afa8313bfe5229333b7d79}{draw} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Lost state draw method\char`\"{}  \char`\"{}draw the texts \char`\"{}you lost and perform the countdown!\char`\"{}\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLostState_adc3ca51b5586bcf492cfbadb4019eca1}\label{classLostState_adc3ca51b5586bcf492cfbadb4019eca1}} 
+sf\+::\+Text {\bfseries m\+\_\+text}
+\item 
+\mbox{\Hypertarget{classLostState_a7592a0a1cc8aeb75aaa6034d00a71e1c}\label{classLostState_a7592a0a1cc8aeb75aaa6034d00a71e1c}} 
+sf\+::\+Time {\bfseries m\+\_\+count\+Down}
+\item 
+\mbox{\Hypertarget{classLostState_ac57c561a1bef734c2d4f10f45ec8d024}\label{classLostState_ac57c561a1bef734c2d4f10f45ec8d024}} 
+sf\+::\+Text {\bfseries m\+\_\+count\+Down\+Text}
+\item 
+\mbox{\Hypertarget{classLostState_afbf2bb0267880b042616c847a6b5a950}\label{classLostState_afbf2bb0267880b042616c847a6b5a950}} 
+\hyperlink{classPlayingState}{Playing\+State} $\ast$ {\bfseries m\+\_\+playing\+State}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Lost State Class\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLostState_a48e846ea945ff11f7bda00e71a0cfd7d}\label{classLostState_a48e846ea945ff11f7bda00e71a0cfd7d}} 
+\index{Lost\+State@{Lost\+State}!Lost\+State@{Lost\+State}}
+\index{Lost\+State@{Lost\+State}!Lost\+State@{Lost\+State}}
+\subsubsection{\texorpdfstring{Lost\+State()}{LostState()}}
+{\footnotesize\ttfamily Lost\+State\+::\+Lost\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classGame}{Game} $\ast$}]{game,  }\item[{\hyperlink{classGameState}{Game\+State} $\ast$}]{playing\+State }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}lost state construtor\char`\"{} 
+
+\char`\"{}\+Lost\+State constructor\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Game object, playing state object} & \\
+\hline
+{\em Game object and playing state} & \char`\"{}create the texts and the timer for the lost page\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{GameState_8hpp}{Game\+State.\+hpp}\item 
+Game\+State.\+cpp\end{DoxyCompactItemize}

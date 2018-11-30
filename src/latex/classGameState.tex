@@ -1,0 +1,91 @@
+\hypertarget{classGameState}{}\section{Game\+State Class Reference}
+\label{classGameState}\index{Game\+State@{Game\+State}}
+
+
+\char`\"{}\+Game State class\char`\"{}  \char`\"{}\+The game states navigation\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Game\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Game\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Game\+State\+:
+% FIG 1
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGameState_a81618e0403319d48e9f25347111f8157}\label{classGameState_a81618e0403319d48e9f25347111f8157}} 
+enum {\bfseries State} \{ \newline
+{\bfseries No\+Coin}, 
+{\bfseries Get\+Ready}, 
+{\bfseries Playing}, 
+{\bfseries Won}, 
+\newline
+{\bfseries Lost}, 
+{\bfseries Count}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGameState_ab0a50af4416535fc9ed4462015de9bc3}{Game\+State} (\hyperlink{classGame}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Game state constructor\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameState_a7f1afbce585f48311006ddb00c26e32f}\label{classGameState_a7f1afbce585f48311006ddb00c26e32f}} 
+\hyperlink{classGame}{Game} $\ast$ \hyperlink{classGameState_a7f1afbce585f48311006ddb00c26e32f}{get\+Game} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}get the game\char`\"{}  \char`\"{}helper functio to get the game oject\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameState_a4cd6f5b4ad23fc08dca287df26d94b94}\label{classGameState_a4cd6f5b4ad23fc08dca287df26d94b94}} 
+virtual void \hyperlink{classGameState_a4cd6f5b4ad23fc08dca287df26d94b94}{insert\+Coin} ()=0
+\begin{DoxyCompactList}\small\item\em \char`\"{}insert coin virtual function\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameState_aa14eeaf244bcf19b7013af75cb722dde}\label{classGameState_aa14eeaf244bcf19b7013af75cb722dde}} 
+virtual void \hyperlink{classGameState_aa14eeaf244bcf19b7013af75cb722dde}{press\+Button} ()=0
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for press button\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameState_afb05bd19a9c5cf27f6923b52f1ffc17b}\label{classGameState_afb05bd19a9c5cf27f6923b52f1ffc17b}} 
+virtual void \hyperlink{classGameState_afb05bd19a9c5cf27f6923b52f1ffc17b}{move\+Stick} (sf\+::\+Vector2i direction)=0
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for movestick\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameState_ab1fe4312f7ce88e7dc11f9935dee67d1}\label{classGameState_ab1fe4312f7ce88e7dc11f9935dee67d1}} 
+virtual void \hyperlink{classGameState_ab1fe4312f7ce88e7dc11f9935dee67d1}{update} (sf\+::\+Time delta)=0
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for update\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGameState_a3131198be0dee9ad887fc48a02d626e3}\label{classGameState_a3131198be0dee9ad887fc48a02d626e3}} 
+virtual void \hyperlink{classGameState_a3131198be0dee9ad887fc48a02d626e3}{draw} (sf\+::\+Render\+Window \&window)=0
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for draw\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGameState_a7e0742cb5f15d4ed5090108cb6308852}\label{classGameState_a7e0742cb5f15d4ed5090108cb6308852}} 
+\hyperlink{classGame}{Game} $\ast$ {\bfseries m\+\_\+game}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Game State class\char`\"{}  \char`\"{}\+The game states navigation\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGameState_ab0a50af4416535fc9ed4462015de9bc3}\label{classGameState_ab0a50af4416535fc9ed4462015de9bc3}} 
+\index{Game\+State@{Game\+State}!Game\+State@{Game\+State}}
+\index{Game\+State@{Game\+State}!Game\+State@{Game\+State}}
+\subsubsection{\texorpdfstring{Game\+State()}{GameState()}}
+{\footnotesize\ttfamily Game\+State\+::\+Game\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classGame}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Game state constructor\char`\"{} 
+
+\char`\"{}\+Game\+State Constructor\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Game  object} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{GameState_8hpp}{Game\+State.\+hpp}\item 
+Game\+State.\+cpp\end{DoxyCompactItemize}

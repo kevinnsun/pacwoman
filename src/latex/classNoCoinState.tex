@@ -1,0 +1,134 @@
+\hypertarget{classNoCoinState}{}\section{No\+Coin\+State Class Reference}
+\label{classNoCoinState}\index{No\+Coin\+State@{No\+Coin\+State}}
+
+
+\char`\"{}\+Nocoin state Class\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Game\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for No\+Coin\+State\+:
+% FIG 0
+
+
+Collaboration diagram for No\+Coin\+State\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNoCoinState_ab06a3e84e2a20c14e036e68e9e6eb667}{No\+Coin\+State} (\hyperlink{classGame}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+No coin state construtor\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNoCoinState_a417209eadad2f71284cf09d369bc389e}\label{classNoCoinState_a417209eadad2f71284cf09d369bc389e}} 
+void \hyperlink{classNoCoinState_a417209eadad2f71284cf09d369bc389e}{insert\+Coin} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}insert coin\char`\"{}  \char`\"{}once the player clicks I in the nocoinstate, then change the game state to get ready\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNoCoinState_a47dd2924ce9601b45ee11e0d9b8452f7}\label{classNoCoinState_a47dd2924ce9601b45ee11e0d9b8452f7}} 
+void \hyperlink{classNoCoinState_a47dd2924ce9601b45ee11e0d9b8452f7}{press\+Button} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for press button\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNoCoinState_a9df4914c752847a6a57f81eb921ab9b5}\label{classNoCoinState_a9df4914c752847a6a57f81eb921ab9b5}} 
+void \hyperlink{classNoCoinState_a9df4914c752847a6a57f81eb921ab9b5}{move\+Stick} (sf\+::\+Vector2i direction)
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for movestick\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classNoCoinState_a63f0b15e0a56b25d4a9a91a4bba35414}{update} (sf\+::\+Time Delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Nocoin state update function\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classNoCoinState_a62c20a535a5b7af0d04d791d97834655}{draw} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Description\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNoCoinState_aa29e5ec2201fb33b38cc6511101def24}\label{classNoCoinState_aa29e5ec2201fb33b38cc6511101def24}} 
+sf\+::\+Text {\bfseries m\+\_\+text}
+\item 
+\mbox{\Hypertarget{classNoCoinState_aafd7220e481cf89461d42b956975bed4}\label{classNoCoinState_aafd7220e481cf89461d42b956975bed4}} 
+sf\+::\+Sprite {\bfseries m\+\_\+sprite}
+\item 
+\mbox{\Hypertarget{classNoCoinState_a01373bc21949f3797e36bdabfb1c32f5}\label{classNoCoinState_a01373bc21949f3797e36bdabfb1c32f5}} 
+bool {\bfseries m\+\_\+display\+Text}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Nocoin state Class\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNoCoinState_ab06a3e84e2a20c14e036e68e9e6eb667}\label{classNoCoinState_ab06a3e84e2a20c14e036e68e9e6eb667}} 
+\index{No\+Coin\+State@{No\+Coin\+State}!No\+Coin\+State@{No\+Coin\+State}}
+\index{No\+Coin\+State@{No\+Coin\+State}!No\+Coin\+State@{No\+Coin\+State}}
+\subsubsection{\texorpdfstring{No\+Coin\+State()}{NoCoinState()}}
+{\footnotesize\ttfamily No\+Coin\+State\+::\+No\+Coin\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classGame}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+No coin state construtor\char`\"{} 
+
+\char`\"{}\+No\+Coin\+State Constructor\char`\"{}  \char`\"{}create the logo display and texts for the intialization state\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Game object} & \char`\"{}create the no coin game state\char`\"{}\\
+\hline
+{\em Game object} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNoCoinState_a62c20a535a5b7af0d04d791d97834655}\label{classNoCoinState_a62c20a535a5b7af0d04d791d97834655}} 
+\index{No\+Coin\+State@{No\+Coin\+State}!draw@{draw}}
+\index{draw@{draw}!No\+Coin\+State@{No\+Coin\+State}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void No\+Coin\+State\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}\+Description\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Param description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+\char`\"{}\+Pre-\/conditions\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\char`\"{}\+Post-\/conditions\char`\"{} 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Return of the function\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGameState_a3131198be0dee9ad887fc48a02d626e3}{Game\+State}.
+
+\mbox{\Hypertarget{classNoCoinState_a63f0b15e0a56b25d4a9a91a4bba35414}\label{classNoCoinState_a63f0b15e0a56b25d4a9a91a4bba35414}} 
+\index{No\+Coin\+State@{No\+Coin\+State}!update@{update}}
+\index{update@{update}!No\+Coin\+State@{No\+Coin\+State}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void No\+Coin\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}\+Nocoin state update function\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dealt in type Time} & \char`\"{}in the initalize state, the text will flash\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\char`\"{}void\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGameState_ab1fe4312f7ce88e7dc11f9935dee67d1}{Game\+State}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{GameState_8hpp}{Game\+State.\+hpp}\item 
+Game\+State.\+cpp\end{DoxyCompactItemize}

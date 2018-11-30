@@ -19,14 +19,13 @@ void Maze::loadLevel(std::string name)
 	m_ghostPositions.clear();
 
 	sf::Image levelData;
-	if (!levelData.loadFromFile("assets/levels/"+ name +".png"))
-        throw std::runtime_error("Failed to load level");
+	if (!levelData.loadFromFile("assets/levels/medium.png"))
+        throw std::runtime_error("Failed to load level (" + name + ")");
 
         m_mazeSize = sf::Vector2i(levelData.getSize());
 
-				//The size has to be at least 15px in length and width, otherwise return error
         if (m_mazeSize.x < 15 || m_mazeSize.y < 15)
-        throw std::runtime_error("The loaded level is too small");
+        throw std::runtime_error("The loaded level is too small (min 15 cells large)");
 
         for (unsigned int y = 0; y < m_mazeSize.y; y++)
 		 {
