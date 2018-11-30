@@ -1,26 +1,44 @@
 #include "Character.hpp"
 #include <cmath>
 
+/*!
+   \brief "Character Constructor"
+   \desc "Create a character Object"
+*/
 Character::Character()
-:m_maze(nullptr)
-,m_speed(25.f)
-,m_currentDirection(1, 0)
+:m_maze(nullptr) //set the maze null pointer
+,m_speed(25.f) //set the default speed of character
+,m_currentDirection(1, 0) //set the current direction to moving right
 ,m_nextDirection(0, 0)
 ,m_previousIntersection(0, 0)
 {
 }
 
+/*!
+   \brief "getCollisionBox"
+   \desc "get the collision outline of the chracter"
+   \return "rectangle float"
+*/
 sf::FloatRect Character::getCollisionBox() const
 {
   sf::FloatRect bounds(3, 3, 34, 34);
     return getTransform().transformRect(bounds);
 }
 
+/*!
+   \brief "set the maze map"
+   \param "maze object"
+   \desc "create the maze map by assigning maze param to local maze attribute"
+*/
 void Character::setMaze(Maze* maze)
 {
 	m_maze = maze;
 }
 
+/*!
+   \brief "set the speed"
+   \param "speed: float type"
+*/
 void Character::setSpeed(float speed)
 {
 	m_speed = speed;

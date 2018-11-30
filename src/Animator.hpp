@@ -1,3 +1,8 @@
+/*!
+   \file "Animator.hpp"
+   \brief "Animator class - handles game animations"
+   \date "28/November/2018"
+*/
 #ifndef PACWOMAN_ANIMATOR_HPP
 #define PACWOMAN_ANIMATOR_HPP
 
@@ -9,20 +14,19 @@
 */
 class Animator
 {
-public:
+
+public: //public methods
     Animator();
 
     void addFrame(sf::IntRect frame);
-
     void play(sf::Time duration, bool loop);
     bool isPlaying() const;
-
     void update(sf::Time delta);
     void animate(sf::Sprite& sprite);
 
-private:
-    std::vector<sf::IntRect> m_frames;
 
+private: //private attributes
+    std::vector<sf::IntRect> m_frames;
     bool m_isPlaying;
     sf::Time m_duration;
     bool m_loop;

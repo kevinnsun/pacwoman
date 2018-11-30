@@ -58,7 +58,7 @@ void Animator::update(sf::Time delta)
 {
     if (!isPlaying())
         return;
-
+        
     static sf::Time timeBuffer = sf::Time::Zero;
     timeBuffer += delta;
 
