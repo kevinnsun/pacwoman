@@ -97,6 +97,7 @@ PlayingState::PlayingState(Game* game)
 	m_remainingDotsText.setCharacterSize(10);
 	m_remainingDotsText.setPosition(280, 480);
 
+	//create the live sprites based on the texture
 	for (auto& liveSprite : m_liveSprite)
 	{
 		liveSprite.setTexture(game->getTexture());
@@ -112,7 +113,6 @@ PlayingState::PlayingState(Game* game)
 /*!
    \brief "Playing state: loading next level"
 	 \desc "load the levels and all of it's elements"
-   \return "void"
 */
 void PlayingState::loadNextLevel()
 {
@@ -177,7 +177,6 @@ void PlayingState::moveCharactersToInitialPosition()
 
 /*!
    \brief "Update the camera position"
-   \return "void"
 */
 void PlayingState::updateCameraPosition()
 {
@@ -203,7 +202,7 @@ void PlayingState::updateCameraPosition()
 PlayingState::~PlayingState()
 {
 	delete m_pacWoman;
-	
+
 	for (Ghost* ghost : m_ghosts)
 		delete ghost;
 }
@@ -533,7 +532,6 @@ void WonState::moveStick(sf::Vector2i direction)
 /*!
    \brief "update in the won state"
    \param "delta of sfml Time"
-   \return "void"
 */
 void WonState::update(sf::Time delta)
 {

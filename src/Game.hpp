@@ -5,7 +5,6 @@
 */
 #ifndef PACWOMAN_GAME_HPP
 #define PACWOMAN_GAME_HPP
-
 #include "GameState.hpp"
 #include <SFML/Graphics.hpp>
 #include <array>
