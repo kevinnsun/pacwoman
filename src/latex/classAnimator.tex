@@ -1,0 +1,136 @@
+\hypertarget{classAnimator}{}\section{Animator Class Reference}
+\label{classAnimator}\index{Animator@{Animator}}
+
+
+\char`\"{}\+Animator Class\char`\"{}  \char`\"{}times animations for the sprites in the game\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Animator.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAnimator_a701eeb9283612be2027425efb06bbff7}\label{classAnimator_a701eeb9283612be2027425efb06bbff7}} 
+\hyperlink{classAnimator_a701eeb9283612be2027425efb06bbff7}{Animator} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Animator Constructor\char`\"{}  \char`\"{}set the isplay to false\char`\"{}  \char`\"{}set the current frame to 0\char`\"{}  \char`\"{}set the duration to time zero\char`\"{}  \char`\"{}set the loop to false\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classAnimator_a5acf71c2ee34281b7acd09af5d7a2b77}{add\+Frame} (sf\+::\+Int\+Rect frame)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Add a new frame to the animation\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classAnimator_a36e5cb2d273648b60b32f9dfdec08b63}{play} (sf\+::\+Time duration, bool loop)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Play animation\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classAnimator_af652cfa1671a9a8155f85b2b33f65a17}{is\+Playing} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Isplaying function to determin if the game state is in playing mode\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classAnimator_a619d6e7f88fcf2788a58ccf19068c73b}{update} (sf\+::\+Time delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Update animation based on time\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classAnimator_a04281600d159dbc1556d3856b69cef74}{animate} (sf\+::\+Sprite \&sprite)
+\begin{DoxyCompactList}\small\item\em \char`\"{}animate function to animate the sprite\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAnimator_a37a6d9c81a255c1adcebad88a62a62d7}\label{classAnimator_a37a6d9c81a255c1adcebad88a62a62d7}} 
+std\+::vector$<$ sf\+::\+Int\+Rect $>$ {\bfseries m\+\_\+frames}
+\item 
+\mbox{\Hypertarget{classAnimator_ad11d7d42a6082393b2a5c4fcc1f9fea0}\label{classAnimator_ad11d7d42a6082393b2a5c4fcc1f9fea0}} 
+bool {\bfseries m\+\_\+is\+Playing}
+\item 
+\mbox{\Hypertarget{classAnimator_a3082eea50040a6522de6ebc2a90caab4}\label{classAnimator_a3082eea50040a6522de6ebc2a90caab4}} 
+sf\+::\+Time {\bfseries m\+\_\+duration}
+\item 
+\mbox{\Hypertarget{classAnimator_ae7c08fe8255ca307e92eeda429d569f2}\label{classAnimator_ae7c08fe8255ca307e92eeda429d569f2}} 
+bool {\bfseries m\+\_\+loop}
+\item 
+\mbox{\Hypertarget{classAnimator_a33f754f51e88d2b7275c4baeb32ab3cb}\label{classAnimator_a33f754f51e88d2b7275c4baeb32ab3cb}} 
+unsigned int {\bfseries m\+\_\+current\+Frame}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Animator Class\char`\"{}  \char`\"{}times animations for the sprites in the game\char`\"{} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnimator_a5acf71c2ee34281b7acd09af5d7a2b77}\label{classAnimator_a5acf71c2ee34281b7acd09af5d7a2b77}} 
+\index{Animator@{Animator}!add\+Frame@{add\+Frame}}
+\index{add\+Frame@{add\+Frame}!Animator@{Animator}}
+\subsubsection{\texorpdfstring{add\+Frame()}{addFrame()}}
+{\footnotesize\ttfamily void Animator\+::add\+Frame (\begin{DoxyParamCaption}\item[{sf\+::\+Int\+Rect}]{frame }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Add a new frame to the animation\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame of type Int\+Rect} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAnimator_a04281600d159dbc1556d3856b69cef74}\label{classAnimator_a04281600d159dbc1556d3856b69cef74}} 
+\index{Animator@{Animator}!animate@{animate}}
+\index{animate@{animate}!Animator@{Animator}}
+\subsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily void Animator\+::animate (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{sprite }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}animate function to animate the sprite\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite of type Sprite} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\char`\"{}void\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAnimator_af652cfa1671a9a8155f85b2b33f65a17}\label{classAnimator_af652cfa1671a9a8155f85b2b33f65a17}} 
+\index{Animator@{Animator}!is\+Playing@{is\+Playing}}
+\index{is\+Playing@{is\+Playing}!Animator@{Animator}}
+\subsubsection{\texorpdfstring{is\+Playing()}{isPlaying()}}
+{\footnotesize\ttfamily bool Animator\+::is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\char`\"{}\+Isplaying function to determin if the game state is in playing mode\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}true or false\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAnimator_a36e5cb2d273648b60b32f9dfdec08b63}\label{classAnimator_a36e5cb2d273648b60b32f9dfdec08b63}} 
+\index{Animator@{Animator}!play@{play}}
+\index{play@{play}!Animator@{Animator}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Animator\+::play (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{duration,  }\item[{bool}]{loop }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Play animation\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration time, and the loop boolean} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAnimator_a619d6e7f88fcf2788a58ccf19068c73b}\label{classAnimator_a619d6e7f88fcf2788a58ccf19068c73b}} 
+\index{Animator@{Animator}!update@{update}}
+\index{update@{update}!Animator@{Animator}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Animator\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Update animation based on time\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dealta of type Time from S\+F\+ML} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+\char`\"{}\+User must be in playing mode\char`\"{} 
+\end{DoxyPrecond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Animator_8hpp}{Animator.\+hpp}\item 
+Animator.\+cpp\end{DoxyCompactItemize}

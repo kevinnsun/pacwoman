@@ -1,0 +1,121 @@
+\hypertarget{classWonState}{}\section{Won\+State Class Reference}
+\label{classWonState}\index{Won\+State@{Won\+State}}
+
+
+\char`\"{}\+Won State Class\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Game\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Won\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Won\+State\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWonState_aec908e9c1dadd32d8efd8266010ec324}{Won\+State} (\hyperlink{classGame}{Game} $\ast$game, \hyperlink{classGameState}{Game\+State} $\ast$playing\+State)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Wonstate construtor\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWonState_aeaab03fa1a39188c19107047417c65b6}\label{classWonState_aeaab03fa1a39188c19107047417c65b6}} 
+void \hyperlink{classWonState_aeaab03fa1a39188c19107047417c65b6}{insert\+Coin} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}insert coin virtual function\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWonState_ab17f101d9ab90e60259e28b8775a76ec}\label{classWonState_ab17f101d9ab90e60259e28b8775a76ec}} 
+void \hyperlink{classWonState_ab17f101d9ab90e60259e28b8775a76ec}{press\+Button} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for press button\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWonState_a337f17bbc305e4e68784491605d70a38}\label{classWonState_a337f17bbc305e4e68784491605d70a38}} 
+void \hyperlink{classWonState_a337f17bbc305e4e68784491605d70a38}{move\+Stick} (sf\+::\+Vector2i direction)
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for movestick\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classWonState_a81880fd5e0c94b8d477ba747a23bd475}{update} (sf\+::\+Time Delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}update in the won state\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classWonState_ad3c7505c55d3d21aae48a64707d34f8b}{draw} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Won state draw function\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWonState_a76c26653a6f745480b75e2781da8051d}\label{classWonState_a76c26653a6f745480b75e2781da8051d}} 
+sf\+::\+Text {\bfseries m\+\_\+text}
+\item 
+\mbox{\Hypertarget{classWonState_a7afc85802a4fce7fb74028841183d424}\label{classWonState_a7afc85802a4fce7fb74028841183d424}} 
+\hyperlink{classPlayingState}{Playing\+State} $\ast$ {\bfseries m\+\_\+playing\+State}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Won State Class\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWonState_aec908e9c1dadd32d8efd8266010ec324}\label{classWonState_aec908e9c1dadd32d8efd8266010ec324}} 
+\index{Won\+State@{Won\+State}!Won\+State@{Won\+State}}
+\index{Won\+State@{Won\+State}!Won\+State@{Won\+State}}
+\subsubsection{\texorpdfstring{Won\+State()}{WonState()}}
+{\footnotesize\ttfamily Won\+State\+::\+Won\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classGame}{Game} $\ast$}]{game,  }\item[{\hyperlink{classGameState}{Game\+State} $\ast$}]{playing\+State }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Wonstate construtor\char`\"{} 
+
+\char`\"{}\+Won\+State constructor\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em game and playing state object} & \\
+\hline
+{\em Takes in the game object and the playing state} & \char`\"{}create the texts and the timer for the won page\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWonState_ad3c7505c55d3d21aae48a64707d34f8b}\label{classWonState_ad3c7505c55d3d21aae48a64707d34f8b}} 
+\index{Won\+State@{Won\+State}!draw@{draw}}
+\index{draw@{draw}!Won\+State@{Won\+State}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Won\+State\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}\+Won state draw function\char`\"{} 
+
+\char`\"{}\+Won state draw function\char`\"{}  \char`\"{}draw the texts \char`\"{}you won!\char`\"{}\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em the window to be drawn to} & \char`\"{}draw the texts \char`\"{}you won!\char`\"{}\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classGameState_a3131198be0dee9ad887fc48a02d626e3}{Game\+State}.
+
+\mbox{\Hypertarget{classWonState_a81880fd5e0c94b8d477ba747a23bd475}\label{classWonState_a81880fd5e0c94b8d477ba747a23bd475}} 
+\index{Won\+State@{Won\+State}!update@{update}}
+\index{update@{update}!Won\+State@{Won\+State}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Won\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}update in the won state\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta of sfml Time} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classGameState_ab1fe4312f7ce88e7dc11f9935dee67d1}{Game\+State}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{GameState_8hpp}{Game\+State.\+hpp}\item 
+Game\+State.\+cpp\end{DoxyCompactItemize}

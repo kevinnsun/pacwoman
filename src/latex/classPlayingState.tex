@@ -1,0 +1,228 @@
+\hypertarget{classPlayingState}{}\section{Playing\+State Class Reference}
+\label{classPlayingState}\index{Playing\+State@{Playing\+State}}
+
+
+\char`\"{}\+Playing State Class\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Game\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Playing\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Playing\+State\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlayingState_a0f58bcb8372adf9e533ce09451a24a1f}{Playing\+State} (\hyperlink{classGame}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Playing State construtor and destructor\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{classPlayingState_afd96eb2be532e40c9db2f9607e4ea284}{$\sim$\+Playing\+State} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Playing state constructor\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayingState_a936d41a2041ace2ccb67a9b779d113a7}\label{classPlayingState_a936d41a2041ace2ccb67a9b779d113a7}} 
+void \hyperlink{classPlayingState_a936d41a2041ace2ccb67a9b779d113a7}{insert\+Coin} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Key Commands for all the playing state game state\char`\"{}  \char`\"{}\+These are the functions that are the key commands for the playing state\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayingState_ae59ff244a6cd4a3c6f6fcaef41f4d8c5}\label{classPlayingState_ae59ff244a6cd4a3c6f6fcaef41f4d8c5}} 
+void \hyperlink{classPlayingState_ae59ff244a6cd4a3c6f6fcaef41f4d8c5}{press\+Button} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for press button\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayingState_a64cc25d3ffd45cf2a25fdf3bfdc2f28d}\label{classPlayingState_a64cc25d3ffd45cf2a25fdf3bfdc2f28d}} 
+void \hyperlink{classPlayingState_a64cc25d3ffd45cf2a25fdf3bfdc2f28d}{move\+Stick} (sf\+::\+Vector2i direction)
+\begin{DoxyCompactList}\small\item\em \char`\"{}vitual implementation for movestick\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayingState_a5ca082ab48662e4a4836de1a2c15e6fd}\label{classPlayingState_a5ca082ab48662e4a4836de1a2c15e6fd}} 
+void \hyperlink{classPlayingState_a5ca082ab48662e4a4836de1a2c15e6fd}{update} (sf\+::\+Time Delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Update playing state\char`\"{}  \char`\"{}update pacwoman\textquotesingle{}s position and ghost positions and coins\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classPlayingState_ad7ac98b6b522060dbff840ce2f5d38d0}{draw} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em \char`\"{}draw function for playing state\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classPlayingState_abbf53be223552107f95020420d045a10}{load\+Next\+Level} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}load the next level\char`\"{}  \char`\"{}after user completes level, load the next level\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classPlayingState_a1c8c1efbf757a3b62feda27bd7f25211}{reset\+To\+Zero} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}reset to zero\char`\"{}  \char`\"{}rest all the stats to zero\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classPlayingState_a8b888a00a70d07082dc614b3897984a5}{reset\+Current\+Level} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}reset the current level\char`\"{}  \char`\"{}after user dies, then reset the current level\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classPlayingState_a528cb58eb4e5b1db4f20e4f6beeed513}{reset\+Live\+Count} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}reset lives count\char`\"{}  \char`\"{}after the pacwoman dies completely, reset the number of lives back to zero\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classPlayingState_a18d73977b811f57fd1328e76b69f39a6}{move\+Characters\+To\+Initial\+Position} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Move characters back to original position\char`\"{}  \char`\"{}once game begins or pacwoman dies, then reset characters to original position\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classPlayingState_a9f65954a241c0cc7eed49cc13acbe65c}{update\+Camera\+Position} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}update camera position\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlayingState_a935eb266233ee3025a44bb4b34927f76}\label{classPlayingState_a935eb266233ee3025a44bb4b34927f76}} 
+\hyperlink{classPacWoman}{Pac\+Woman} $\ast$ {\bfseries m\+\_\+pac\+Woman}
+\item 
+\mbox{\Hypertarget{classPlayingState_a2659ec275268d4b4cf9cea9b1dad709f}\label{classPlayingState_a2659ec275268d4b4cf9cea9b1dad709f}} 
+std\+::vector$<$ \hyperlink{classGhost}{Ghost} $\ast$ $>$ {\bfseries m\+\_\+ghosts}
+\item 
+\mbox{\Hypertarget{classPlayingState_adba994a8e8fb0f1762130a2e84f03590}\label{classPlayingState_adba994a8e8fb0f1762130a2e84f03590}} 
+\hyperlink{classMaze}{Maze} {\bfseries m\+\_\+maze}
+\item 
+\mbox{\Hypertarget{classPlayingState_adce2e38d663280387a8dd0b867d6d68c}\label{classPlayingState_adce2e38d663280387a8dd0b867d6d68c}} 
+sf\+::\+View {\bfseries m\+\_\+camera}
+\item 
+\mbox{\Hypertarget{classPlayingState_aa8f244c661452fa96f568a85475a6746}\label{classPlayingState_aa8f244c661452fa96f568a85475a6746}} 
+sf\+::\+Render\+Texture {\bfseries m\+\_\+scene}
+\item 
+\mbox{\Hypertarget{classPlayingState_aa58bf83c7808794c0f243f149a5cba20}\label{classPlayingState_aa58bf83c7808794c0f243f149a5cba20}} 
+sf\+::\+Text {\bfseries m\+\_\+score\+Text}
+\item 
+\mbox{\Hypertarget{classPlayingState_ac9c28cef1453c8e0b6e68a39e60e2abb}\label{classPlayingState_ac9c28cef1453c8e0b6e68a39e60e2abb}} 
+sf\+::\+Text {\bfseries m\+\_\+level\+Text}
+\item 
+\mbox{\Hypertarget{classPlayingState_a48695ad7bde3ae4202e956be7a352ac3}\label{classPlayingState_a48695ad7bde3ae4202e956be7a352ac3}} 
+sf\+::\+Text {\bfseries m\+\_\+remaining\+Dots\+Text}
+\item 
+\mbox{\Hypertarget{classPlayingState_aaed91e2e64f5c9ea85f8d0323bedc69a}\label{classPlayingState_aaed91e2e64f5c9ea85f8d0323bedc69a}} 
+sf\+::\+Sprite {\bfseries m\+\_\+live\+Sprite} \mbox{[}3\mbox{]}
+\item 
+\mbox{\Hypertarget{classPlayingState_a5580af49044400ae2a5d7801c2ae4fbe}\label{classPlayingState_a5580af49044400ae2a5d7801c2ae4fbe}} 
+int {\bfseries m\+\_\+level}
+\item 
+\mbox{\Hypertarget{classPlayingState_a5c0ab3996c25ab7ad27106841a82443a}\label{classPlayingState_a5c0ab3996c25ab7ad27106841a82443a}} 
+int {\bfseries m\+\_\+live\+Count}
+\item 
+\mbox{\Hypertarget{classPlayingState_a4c981f9d3bde9bda7524e4a68ec6cfef}\label{classPlayingState_a4c981f9d3bde9bda7524e4a68ec6cfef}} 
+int {\bfseries m\+\_\+score}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Playing State Class\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlayingState_a0f58bcb8372adf9e533ce09451a24a1f}\label{classPlayingState_a0f58bcb8372adf9e533ce09451a24a1f}} 
+\index{Playing\+State@{Playing\+State}!Playing\+State@{Playing\+State}}
+\index{Playing\+State@{Playing\+State}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{Playing\+State()}{PlayingState()}}
+{\footnotesize\ttfamily Playing\+State\+::\+Playing\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classGame}{Game} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Playing State construtor and destructor\char`\"{} 
+
+\char`\"{}\+Playing\+State Constructor\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em game object} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayingState_afd96eb2be532e40c9db2f9607e4ea284}\label{classPlayingState_afd96eb2be532e40c9db2f9607e4ea284}} 
+\index{Playing\+State@{Playing\+State}!````~Playing\+State@{$\sim$\+Playing\+State}}
+\index{````~Playing\+State@{$\sim$\+Playing\+State}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{$\sim$\+Playing\+State()}{~PlayingState()}}
+{\footnotesize\ttfamily Playing\+State\+::$\sim$\+Playing\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Playing state constructor\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+\char`\"{}the game was in get ready state and after user presses S, it loads playing state\char`\"{} 
+\end{DoxyPrecond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayingState_ad7ac98b6b522060dbff840ce2f5d38d0}\label{classPlayingState_ad7ac98b6b522060dbff840ce2f5d38d0}} 
+\index{Playing\+State@{Playing\+State}!draw@{draw}}
+\index{draw@{draw}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Playing\+State\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}draw function for playing state\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intakes the window object} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classGameState_a3131198be0dee9ad887fc48a02d626e3}{Game\+State}.
+
+\mbox{\Hypertarget{classPlayingState_abbf53be223552107f95020420d045a10}\label{classPlayingState_abbf53be223552107f95020420d045a10}} 
+\index{Playing\+State@{Playing\+State}!load\+Next\+Level@{load\+Next\+Level}}
+\index{load\+Next\+Level@{load\+Next\+Level}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{load\+Next\+Level()}{loadNextLevel()}}
+{\footnotesize\ttfamily void Playing\+State\+::load\+Next\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}load the next level\char`\"{}  \char`\"{}after user completes level, load the next level\char`\"{} 
+
+\char`\"{}\+Playing state\+: loading next level\char`\"{}  \char`\"{}load the levels and all of it\textquotesingle{}s elements\char`\"{} \mbox{\Hypertarget{classPlayingState_a18d73977b811f57fd1328e76b69f39a6}\label{classPlayingState_a18d73977b811f57fd1328e76b69f39a6}} 
+\index{Playing\+State@{Playing\+State}!move\+Characters\+To\+Initial\+Position@{move\+Characters\+To\+Initial\+Position}}
+\index{move\+Characters\+To\+Initial\+Position@{move\+Characters\+To\+Initial\+Position}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{move\+Characters\+To\+Initial\+Position()}{moveCharactersToInitialPosition()}}
+{\footnotesize\ttfamily void Playing\+State\+::move\+Characters\+To\+Initial\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Move characters back to original position\char`\"{}  \char`\"{}once game begins or pacwoman dies, then reset characters to original position\char`\"{} 
+
+\char`\"{}\+Playing\+State -\/ move characters to intial position function\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}void\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayingState_a8b888a00a70d07082dc614b3897984a5}\label{classPlayingState_a8b888a00a70d07082dc614b3897984a5}} 
+\index{Playing\+State@{Playing\+State}!reset\+Current\+Level@{reset\+Current\+Level}}
+\index{reset\+Current\+Level@{reset\+Current\+Level}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{reset\+Current\+Level()}{resetCurrentLevel()}}
+{\footnotesize\ttfamily void Playing\+State\+::reset\+Current\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}reset the current level\char`\"{}  \char`\"{}after user dies, then reset the current level\char`\"{} 
+
+\char`\"{}reset the current level\char`\"{} \mbox{\Hypertarget{classPlayingState_a528cb58eb4e5b1db4f20e4f6beeed513}\label{classPlayingState_a528cb58eb4e5b1db4f20e4f6beeed513}} 
+\index{Playing\+State@{Playing\+State}!reset\+Live\+Count@{reset\+Live\+Count}}
+\index{reset\+Live\+Count@{reset\+Live\+Count}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{reset\+Live\+Count()}{resetLiveCount()}}
+{\footnotesize\ttfamily void Playing\+State\+::reset\+Live\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}reset lives count\char`\"{}  \char`\"{}after the pacwoman dies completely, reset the number of lives back to zero\char`\"{} 
+
+\char`\"{}reset the number of pacwoman lives\char`\"{} \mbox{\Hypertarget{classPlayingState_a1c8c1efbf757a3b62feda27bd7f25211}\label{classPlayingState_a1c8c1efbf757a3b62feda27bd7f25211}} 
+\index{Playing\+State@{Playing\+State}!reset\+To\+Zero@{reset\+To\+Zero}}
+\index{reset\+To\+Zero@{reset\+To\+Zero}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{reset\+To\+Zero()}{resetToZero()}}
+{\footnotesize\ttfamily void Playing\+State\+::reset\+To\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}reset to zero\char`\"{}  \char`\"{}rest all the stats to zero\char`\"{} 
+
+\char`\"{}reset stats to zero\char`\"{} \mbox{\Hypertarget{classPlayingState_a9f65954a241c0cc7eed49cc13acbe65c}\label{classPlayingState_a9f65954a241c0cc7eed49cc13acbe65c}} 
+\index{Playing\+State@{Playing\+State}!update\+Camera\+Position@{update\+Camera\+Position}}
+\index{update\+Camera\+Position@{update\+Camera\+Position}!Playing\+State@{Playing\+State}}
+\subsubsection{\texorpdfstring{update\+Camera\+Position()}{updateCameraPosition()}}
+{\footnotesize\ttfamily void Playing\+State\+::update\+Camera\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}update camera position\char`\"{} 
+
+\char`\"{}\+Update the camera position\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em As pacwoman moves thru the maze, update the sceen based on her movements} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{GameState_8hpp}{Game\+State.\+hpp}\item 
+Game\+State.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,187 @@
+\hypertarget{classGetReadyState}{}\section{Get\+Ready\+State Class Reference}
+\label{classGetReadyState}\index{Get\+Ready\+State@{Get\+Ready\+State}}
+
+
+\char`\"{}get\+Ready state Class\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Game\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Get\+Ready\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Get\+Ready\+State\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGetReadyState_a4b541b06511665065c171a577c58ef07}{Get\+Ready\+State} (\hyperlink{classGame}{Game} $\ast$game, \hyperlink{classGameState}{Game\+State} $\ast$playing\+State)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Get\+Ready\+State Constructor\char`\"{}  \char`\"{}prompt user to get ready and click S to begin game\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGetReadyState_afac1da927d38cf32960f2370856ec9f6}\label{classGetReadyState_afac1da927d38cf32960f2370856ec9f6}} 
+void \hyperlink{classGetReadyState_afac1da927d38cf32960f2370856ec9f6}{insert\+Coin} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Key Commands for all the get ready state game state\char`\"{}  \char`\"{}\+These are the functions that are the key commands for the get ready state\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classGetReadyState_a414a505ec783b1bf577b1b859abaee46}{press\+Button} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Description\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classGetReadyState_ab3073757951c1d757c8f4550bbb1c229}{move\+Stick} (sf\+::\+Vector2i direction)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Description\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classGetReadyState_a412486c612eee1d8c4821706dd7b3206}{update} (sf\+::\+Time Delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Description\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classGetReadyState_a5e31ebfea8bddad603d4e25a6e2eea15}{draw} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Description\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGetReadyState_a123fad5ff8dd03c535873daad9bca244}\label{classGetReadyState_a123fad5ff8dd03c535873daad9bca244}} 
+sf\+::\+Text {\bfseries m\+\_\+text}
+\item 
+\mbox{\Hypertarget{classGetReadyState_ad9a0a3d03327f9843363420eea85f5f0}\label{classGetReadyState_ad9a0a3d03327f9843363420eea85f5f0}} 
+\hyperlink{classGameState}{Game\+State} $\ast$ {\bfseries m\+\_\+playing\+State}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\char`\"{}get\+Ready state Class\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGetReadyState_a4b541b06511665065c171a577c58ef07}\label{classGetReadyState_a4b541b06511665065c171a577c58ef07}} 
+\index{Get\+Ready\+State@{Get\+Ready\+State}!Get\+Ready\+State@{Get\+Ready\+State}}
+\index{Get\+Ready\+State@{Get\+Ready\+State}!Get\+Ready\+State@{Get\+Ready\+State}}
+\subsubsection{\texorpdfstring{Get\+Ready\+State()}{GetReadyState()}}
+{\footnotesize\ttfamily Get\+Ready\+State\+::\+Get\+Ready\+State (\begin{DoxyParamCaption}\item[{\hyperlink{classGame}{Game} $\ast$}]{game,  }\item[{\hyperlink{classGameState}{Game\+State} $\ast$}]{playing\+State }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Get\+Ready\+State Constructor\char`\"{}  \char`\"{}prompt user to get ready and click S to begin game\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game ojbect and playing state} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGetReadyState_a5e31ebfea8bddad603d4e25a6e2eea15}\label{classGetReadyState_a5e31ebfea8bddad603d4e25a6e2eea15}} 
+\index{Get\+Ready\+State@{Get\+Ready\+State}!draw@{draw}}
+\index{draw@{draw}!Get\+Ready\+State@{Get\+Ready\+State}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Get\+Ready\+State\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}\+Description\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Param description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+\char`\"{}\+Pre-\/conditions\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\char`\"{}\+Post-\/conditions\char`\"{} 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Return of the function\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGameState_a3131198be0dee9ad887fc48a02d626e3}{Game\+State}.
+
+\mbox{\Hypertarget{classGetReadyState_ab3073757951c1d757c8f4550bbb1c229}\label{classGetReadyState_ab3073757951c1d757c8f4550bbb1c229}} 
+\index{Get\+Ready\+State@{Get\+Ready\+State}!move\+Stick@{move\+Stick}}
+\index{move\+Stick@{move\+Stick}!Get\+Ready\+State@{Get\+Ready\+State}}
+\subsubsection{\texorpdfstring{move\+Stick()}{moveStick()}}
+{\footnotesize\ttfamily void Get\+Ready\+State\+::move\+Stick (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2i}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}\+Description\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Param description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+\char`\"{}\+Pre-\/conditions\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\char`\"{}\+Post-\/conditions\char`\"{} 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Return of the function\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGameState_afb05bd19a9c5cf27f6923b52f1ffc17b}{Game\+State}.
+
+\mbox{\Hypertarget{classGetReadyState_a414a505ec783b1bf577b1b859abaee46}\label{classGetReadyState_a414a505ec783b1bf577b1b859abaee46}} 
+\index{Get\+Ready\+State@{Get\+Ready\+State}!press\+Button@{press\+Button}}
+\index{press\+Button@{press\+Button}!Get\+Ready\+State@{Get\+Ready\+State}}
+\subsubsection{\texorpdfstring{press\+Button()}{pressButton()}}
+{\footnotesize\ttfamily void Get\+Ready\+State\+::press\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}\+Description\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Param description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+\char`\"{}\+Pre-\/conditions\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\char`\"{}\+Post-\/conditions\char`\"{} 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Return of the function\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGameState_aa14eeaf244bcf19b7013af75cb722dde}{Game\+State}.
+
+\mbox{\Hypertarget{classGetReadyState_a412486c612eee1d8c4821706dd7b3206}\label{classGetReadyState_a412486c612eee1d8c4821706dd7b3206}} 
+\index{Get\+Ready\+State@{Get\+Ready\+State}!update@{update}}
+\index{update@{update}!Get\+Ready\+State@{Get\+Ready\+State}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Get\+Ready\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}\+Description\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Param description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+\char`\"{}\+Pre-\/conditions\char`\"{} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\char`\"{}\+Post-\/conditions\char`\"{} 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Return of the function\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classGameState_ab1fe4312f7ce88e7dc11f9935dee67d1}{Game\+State}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{GameState_8hpp}{Game\+State.\+hpp}\item 
+Game\+State.\+cpp\end{DoxyCompactItemize}

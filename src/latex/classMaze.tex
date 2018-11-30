@@ -1,0 +1,133 @@
+\hypertarget{classMaze}{}\section{Maze Class Reference}
+\label{classMaze}\index{Maze@{Maze}}
+
+
+\char`\"{}\+Maze class\char`\"{}  \char`\"{}\+Header to create the map or scene for the game\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Maze.\+hpp$>$}
+
+
+
+Inheritance diagram for Maze\+:
+% FIG 0
+
+
+Collaboration diagram for Maze\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMaze_a4f49b2e5002abda74794f50c683b4954}\label{classMaze_a4f49b2e5002abda74794f50c683b4954}} 
+{\bfseries Maze} (sf\+::\+Texture \&texture)
+\item 
+\mbox{\Hypertarget{classMaze_adef4f366c652cfd5a92f4244dc47b8fd}\label{classMaze_adef4f366c652cfd5a92f4244dc47b8fd}} 
+void {\bfseries load\+Level} (std\+::string name)
+\item 
+\mbox{\Hypertarget{classMaze_af8d512ec2e2d85258688743eb98f3426}\label{classMaze_af8d512ec2e2d85258688743eb98f3426}} 
+sf\+::\+Vector2i {\bfseries get\+Pac\+Woman\+Position} () const
+\item 
+\mbox{\Hypertarget{classMaze_a9605a231bfb215104fa7d47fa31f1584}\label{classMaze_a9605a231bfb215104fa7d47fa31f1584}} 
+std\+::vector$<$ sf\+::\+Vector2i $>$ {\bfseries get\+Ghost\+Positions} () const
+\item 
+\mbox{\Hypertarget{classMaze_aad26af9cc25f7e5c48f93e111fee7fc5}\label{classMaze_aad26af9cc25f7e5c48f93e111fee7fc5}} 
+std\+::size\+\_\+t {\bfseries position\+To\+Index} (sf\+::\+Vector2i position) const
+\item 
+\mbox{\Hypertarget{classMaze_aecb5fd1f2237d2619e5191c64a8a817c}\label{classMaze_aecb5fd1f2237d2619e5191c64a8a817c}} 
+sf\+::\+Vector2i {\bfseries index\+To\+Position} (std\+::size\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{classMaze_a11674bedf3a85cba24094aaadca0a4a6}\label{classMaze_a11674bedf3a85cba24094aaadca0a4a6}} 
+sf\+::\+Vector2i {\bfseries map\+Pixel\+To\+Cell} (sf\+::\+Vector2f pixel) const
+\item 
+\mbox{\Hypertarget{classMaze_aba18169c52d89adf74d900d80dd5420e}\label{classMaze_aba18169c52d89adf74d900d80dd5420e}} 
+sf\+::\+Vector2f {\bfseries map\+Cell\+To\+Pixel} (sf\+::\+Vector2i cell) const
+\item 
+\mbox{\Hypertarget{classMaze_afd8161771721c755ab9f741c2b39b24f}\label{classMaze_afd8161771721c755ab9f741c2b39b24f}} 
+bool {\bfseries is\+Wall} (sf\+::\+Vector2i position) const
+\item 
+\mbox{\Hypertarget{classMaze_a89c9115911869cc90e2276e8c76384f2}\label{classMaze_a89c9115911869cc90e2276e8c76384f2}} 
+bool {\bfseries is\+Dot} (sf\+::\+Vector2i position) const
+\item 
+\mbox{\Hypertarget{classMaze_a19c5bf92a89045c6ef8430ab58a5d9cc}\label{classMaze_a19c5bf92a89045c6ef8430ab58a5d9cc}} 
+bool {\bfseries is\+Super\+Dot} (sf\+::\+Vector2i position) const
+\item 
+\mbox{\Hypertarget{classMaze_ae1daeb817da3d4bf5bff6ce3ab255da2}\label{classMaze_ae1daeb817da3d4bf5bff6ce3ab255da2}} 
+void {\bfseries pick\+Object} (sf\+::\+Vector2i position)
+\item 
+\mbox{\Hypertarget{classMaze_a5c5b0b9b20d7869de0bf6dda5a0a433d}\label{classMaze_a5c5b0b9b20d7869de0bf6dda5a0a433d}} 
+bool {\bfseries is\+Bonus} (sf\+::\+Vector2i position) const
+\item 
+\mbox{\Hypertarget{classMaze_a664b89e39391a1551babb93556cb36f8}\label{classMaze_a664b89e39391a1551babb93556cb36f8}} 
+sf\+::\+Vector2i {\bfseries get\+Size} () const
+\item 
+\mbox{\Hypertarget{classMaze_afe0905b13aaefd6135346b3cda931556}\label{classMaze_afe0905b13aaefd6135346b3cda931556}} 
+int {\bfseries get\+Remaining\+Dots} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMaze_a6d75ad7c29ef6cab2adfb13933ac6de9}\label{classMaze_a6d75ad7c29ef6cab2adfb13933ac6de9}} 
+enum {\bfseries Cell\+Data} \{ \newline
+{\bfseries Empty}, 
+{\bfseries Wall}, 
+{\bfseries Dot}, 
+{\bfseries Super\+Dot}, 
+\newline
+{\bfseries Bonus}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMaze_a50e027e616c734c6c4b117ed04576539}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Draw header\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMaze_aa07b6c090649dc10ed828722f320a2f6}\label{classMaze_aa07b6c090649dc10ed828722f320a2f6}} 
+sf\+::\+Vector2i {\bfseries m\+\_\+maze\+Size}
+\item 
+\mbox{\Hypertarget{classMaze_a1d003f092dd8062dee69b10b4db03ac7}\label{classMaze_a1d003f092dd8062dee69b10b4db03ac7}} 
+std\+::vector$<$ Cell\+Data $>$ {\bfseries m\+\_\+maze\+Data}
+\item 
+\mbox{\Hypertarget{classMaze_a7bcd5cfd876cae970f08a3b0b1fc0519}\label{classMaze_a7bcd5cfd876cae970f08a3b0b1fc0519}} 
+sf\+::\+Vector2i {\bfseries m\+\_\+pac\+Woman\+Position}
+\item 
+\mbox{\Hypertarget{classMaze_a8d47c88013a9790a98df18ee84d4f1e1}\label{classMaze_a8d47c88013a9790a98df18ee84d4f1e1}} 
+std\+::vector$<$ sf\+::\+Vector2i $>$ {\bfseries m\+\_\+ghost\+Positions}
+\item 
+\mbox{\Hypertarget{classMaze_a0c48b4985799f4e2d806fef12c3abac9}\label{classMaze_a0c48b4985799f4e2d806fef12c3abac9}} 
+sf\+::\+Render\+Texture {\bfseries m\+\_\+render\+Texture}
+\item 
+\mbox{\Hypertarget{classMaze_ad0cddb2a4cc5c621199b8c36095b0f04}\label{classMaze_ad0cddb2a4cc5c621199b8c36095b0f04}} 
+sf\+::\+Texture \& {\bfseries m\+\_\+texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Maze class\char`\"{}  \char`\"{}\+Header to create the map or scene for the game\char`\"{} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMaze_a50e027e616c734c6c4b117ed04576539}\label{classMaze_a50e027e616c734c6c4b117ed04576539}} 
+\index{Maze@{Maze}!draw@{draw}}
+\index{draw@{draw}!Maze@{Maze}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Maze\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\char`\"{}\+Draw header\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfml rendering states} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Maze_8hpp}{Maze.\+hpp}\item 
+Maze.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,141 @@
+\hypertarget{classGhost}{}\section{Ghost Class Reference}
+\label{classGhost}\index{Ghost@{Ghost}}
+
+
+\char`\"{}\+Ghost class\char`\"{}  \char`\"{}\+Ghost class with public variables, multiple public states\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Ghost.\+hpp$>$}
+
+
+
+Inheritance diagram for Ghost\+:
+% FIG 0
+
+
+Collaboration diagram for Ghost\+:
+% FIG 1
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGhost_af712fc09f900832a0225928c4556234d}\label{classGhost_af712fc09f900832a0225928c4556234d}} 
+enum {\bfseries State} \{ {\bfseries Strong}, 
+{\bfseries Weak}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGhost_ac56823314f8c39fc178a59982ad48d8a}{Ghost} (sf\+::\+Texture \&texture, \hyperlink{classPacWoman}{Pac\+Woman} $\ast$pac\+Woman)
+\begin{DoxyCompactList}\small\item\em \char`\"{}ghost constructor\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classGhost_a4f563124a7b39bc1fea2553430e76c24}{set\+Weak} (sf\+::\+Time duration)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Set weak state\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classGhost_af0cf8b5a66a4a390746f43238b96fe55}{is\+Weak} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}is weak method\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGhost_a0ac45a3d870db2f286645e909e868738}\label{classGhost_a0ac45a3d870db2f286645e909e868738}} 
+void \hyperlink{classGhost_a0ac45a3d870db2f286645e909e868738}{update} (sf\+::\+Time delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}update ghost\char`\"{}  \char`\"{}method used to update ghost states an animations\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGhost_a08831fa01afa61f91365ce82cf33bf1b}\label{classGhost_a08831fa01afa61f91365ce82cf33bf1b}} 
+void \hyperlink{classGhost_a08831fa01afa61f91365ce82cf33bf1b}{change\+Direction} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}direction change for ghost\char`\"{}  \char`\"{}changes animation and sprite according to direction that user inputs\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGhost_a6e53afb38446db1eac42cb6529e314ad}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em \char`\"{}draw constructor\char`\"{}  \char`\"{}use to draw differst states for ghosts\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGhost_a1bf800e23e4fcf6edd81909715b8d42a}\label{classGhost_a1bf800e23e4fcf6edd81909715b8d42a}} 
+bool {\bfseries m\+\_\+is\+Weak}
+\item 
+\mbox{\Hypertarget{classGhost_a3908562081e28b6b797807cfba70a5f1}\label{classGhost_a3908562081e28b6b797807cfba70a5f1}} 
+sf\+::\+Time {\bfseries m\+\_\+weakness\+Duration}
+\item 
+\mbox{\Hypertarget{classGhost_a2ed5af6d34f0b57838dae852d845be45}\label{classGhost_a2ed5af6d34f0b57838dae852d845be45}} 
+sf\+::\+Sprite {\bfseries m\+\_\+visual}
+\item 
+\mbox{\Hypertarget{classGhost_a8e2a2f496a465b6d7cd14406ec6a9c8e}\label{classGhost_a8e2a2f496a465b6d7cd14406ec6a9c8e}} 
+\hyperlink{classPacWoman}{Pac\+Woman} $\ast$ {\bfseries m\+\_\+pac\+Woman}
+\item 
+\mbox{\Hypertarget{classGhost_ad7fd67d6954f9f84984b09c4a1761af5}\label{classGhost_ad7fd67d6954f9f84984b09c4a1761af5}} 
+\hyperlink{classAnimator}{Animator} {\bfseries m\+\_\+strong\+Animator}
+\item 
+\mbox{\Hypertarget{classGhost_a10b92c7cc4283807902c328a350f9536}\label{classGhost_a10b92c7cc4283807902c328a350f9536}} 
+\hyperlink{classAnimator}{Animator} {\bfseries m\+\_\+weak\+Animator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Ghost class\char`\"{}  \char`\"{}\+Ghost class with public variables, multiple public states\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGhost_ac56823314f8c39fc178a59982ad48d8a}\label{classGhost_ac56823314f8c39fc178a59982ad48d8a}} 
+\index{Ghost@{Ghost}!Ghost@{Ghost}}
+\index{Ghost@{Ghost}!Ghost@{Ghost}}
+\subsubsection{\texorpdfstring{Ghost()}{Ghost()}}
+{\footnotesize\ttfamily Ghost\+::\+Ghost (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{texture,  }\item[{\hyperlink{classPacWoman}{Pac\+Woman} $\ast$}]{pac\+Woman }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}ghost constructor\char`\"{} 
+
+\char`\"{}\+Ghost attributes \char`\"{}  \char`\"{}\+Ghost class with a list of attributes that make it unique\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfml texture for Pac\+Woman} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGhost_a6e53afb38446db1eac42cb6529e314ad}\label{classGhost_a6e53afb38446db1eac42cb6529e314ad}} 
+\index{Ghost@{Ghost}!draw@{draw}}
+\index{draw@{draw}!Ghost@{Ghost}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Ghost\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\char`\"{}draw constructor\char`\"{}  \char`\"{}use to draw differst states for ghosts\char`\"{} 
+
+\char`\"{}draw ghost\char`\"{}  \char`\"{}uses draw mechanic to draw ghost\char`\"{} \mbox{\Hypertarget{classGhost_af0cf8b5a66a4a390746f43238b96fe55}\label{classGhost_af0cf8b5a66a4a390746f43238b96fe55}} 
+\index{Ghost@{Ghost}!is\+Weak@{is\+Weak}}
+\index{is\+Weak@{is\+Weak}!Ghost@{Ghost}}
+\subsubsection{\texorpdfstring{is\+Weak()}{isWeak()}}
+{\footnotesize\ttfamily bool Ghost\+::is\+Weak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\char`\"{}is weak method\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}returns weak state\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGhost_a4f563124a7b39bc1fea2553430e76c24}\label{classGhost_a4f563124a7b39bc1fea2553430e76c24}} 
+\index{Ghost@{Ghost}!set\+Weak@{set\+Weak}}
+\index{set\+Weak@{set\+Weak}!Ghost@{Ghost}}
+\subsubsection{\texorpdfstring{set\+Weak()}{setWeak()}}
+{\footnotesize\ttfamily void Ghost\+::set\+Weak (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{duration }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Set weak state\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Time duration for sfml} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Ghost_8hpp}{Ghost.\+hpp}\item 
+Ghost.\+cpp\end{DoxyCompactItemize}

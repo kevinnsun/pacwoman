@@ -1,0 +1,201 @@
+\hypertarget{classCharacter}{}\section{Character Class Reference}
+\label{classCharacter}\index{Character@{Character}}
+
+
+\char`\"{}\+Character Class\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Character.\+hpp$>$}
+
+
+
+Inheritance diagram for Character\+:
+% FIG 0
+
+
+Collaboration diagram for Character\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCharacter_adc27bdd255876169bad2ed0bae0cffb5}\label{classCharacter_adc27bdd255876169bad2ed0bae0cffb5}} 
+\hyperlink{classCharacter_adc27bdd255876169bad2ed0bae0cffb5}{Character} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Character Constructor\char`\"{}  \char`\"{}\+Create a character Object\char`\"{} \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCharacter_a9d20989cb4d1c826f98f9d6f7c9f63a6}{update} (sf\+::\+Time delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}update vitual implementation\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classCharacter_aa7ac14465f088f97e955be6a352a5e34}{set\+Direction} (sf\+::\+Vector2i direction)
+\begin{DoxyCompactList}\small\item\em \char`\"{}set the direction of the chracters\char`\"{} \end{DoxyCompactList}\item 
+sf\+::\+Vector2i \hyperlink{classCharacter_ae8147e847ec305534ef4f2652f3541de}{get\+Direction} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}get the direction of character\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classCharacter_aba54445fcae47eff401d4c226675d9b4}{set\+Maze} (\hyperlink{classMaze}{Maze} $\ast$maze)
+\begin{DoxyCompactList}\small\item\em \char`\"{}set the maze map\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classCharacter_a0569c1aa9c37e7436083c0f301a205be}{set\+Speed} (float speed)
+\begin{DoxyCompactList}\small\item\em \char`\"{}set the speed\char`\"{} \end{DoxyCompactList}\item 
+float \hyperlink{classCharacter_afb7791a8c122e8b88244f0a1a54506c0}{get\+Speed} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}get\+Speed\char`\"{}  \char`\"{}get the speed of character\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classCharacter_a53d02c2b1c914990e51e0fb84913d151}{will\+Move} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}willmove function\char`\"{}  \char`\"{}object will move indicator\char`\"{} \end{DoxyCompactList}\item 
+sf\+::\+Float\+Rect \hyperlink{classCharacter_af12a30a3a299cafe423d1554624c4c3f}{get\+Collision\+Box} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}get\+Collision\+Box\char`\"{}  \char`\"{}get the collision outline of the chracter\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCharacter_ab4c0dc6f72c78607b921cf312e10ed35}\label{classCharacter_ab4c0dc6f72c78607b921cf312e10ed35}} 
+virtual void \hyperlink{classCharacter_ab4c0dc6f72c78607b921cf312e10ed35}{change\+Direction} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}change direction\+: virtual implementation\char`\"{}  \char`\"{}\+Change the direction of character function\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCharacter_a7d7a6d44667cbe171f18ea7142f39289}\label{classCharacter_a7d7a6d44667cbe171f18ea7142f39289}} 
+float {\bfseries m\+\_\+speed}
+\item 
+\mbox{\Hypertarget{classCharacter_a0124893049becf79727cb2f5ef031584}\label{classCharacter_a0124893049becf79727cb2f5ef031584}} 
+\hyperlink{classMaze}{Maze} $\ast$ {\bfseries m\+\_\+maze}
+\item 
+\mbox{\Hypertarget{classCharacter_a27e12d144a7138122d9e315782de21ae}\label{classCharacter_a27e12d144a7138122d9e315782de21ae}} 
+sf\+::\+Vector2i {\bfseries m\+\_\+current\+Direction}
+\item 
+\mbox{\Hypertarget{classCharacter_a0334ba3fe08a527bb3d5cf5a2fc28dd4}\label{classCharacter_a0334ba3fe08a527bb3d5cf5a2fc28dd4}} 
+sf\+::\+Vector2i {\bfseries m\+\_\+next\+Direction}
+\item 
+\mbox{\Hypertarget{classCharacter_afd9aba6e89508feb037a3c20d9dbf6ca}\label{classCharacter_afd9aba6e89508feb037a3c20d9dbf6ca}} 
+sf\+::\+Vector2i {\bfseries m\+\_\+previous\+Intersection}
+\item 
+\mbox{\Hypertarget{classCharacter_a8774230073c73c4bc11d939e07bcae9f}\label{classCharacter_a8774230073c73c4bc11d939e07bcae9f}} 
+std\+::array$<$ bool, 4 $>$ {\bfseries m\+\_\+available\+Directions}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Character Class\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+\char`\"{}\+Drawable and Transformable S\+F\+M\+L object\char`\"{} 
+\end{DoxyPrecond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCharacter_af12a30a3a299cafe423d1554624c4c3f}\label{classCharacter_af12a30a3a299cafe423d1554624c4c3f}} 
+\index{Character@{Character}!get\+Collision\+Box@{get\+Collision\+Box}}
+\index{get\+Collision\+Box@{get\+Collision\+Box}!Character@{Character}}
+\subsubsection{\texorpdfstring{get\+Collision\+Box()}{getCollisionBox()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Character\+::get\+Collision\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\char`\"{}get\+Collision\+Box\char`\"{}  \char`\"{}get the collision outline of the chracter\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}rectangle float\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCharacter_ae8147e847ec305534ef4f2652f3541de}\label{classCharacter_ae8147e847ec305534ef4f2652f3541de}} 
+\index{Character@{Character}!get\+Direction@{get\+Direction}}
+\index{get\+Direction@{get\+Direction}!Character@{Character}}
+\subsubsection{\texorpdfstring{get\+Direction()}{getDirection()}}
+{\footnotesize\ttfamily sf\+::\+Vector2i Character\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\char`\"{}get the direction of character\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Vector 2\+D object\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCharacter_afb7791a8c122e8b88244f0a1a54506c0}\label{classCharacter_afb7791a8c122e8b88244f0a1a54506c0}} 
+\index{Character@{Character}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Character@{Character}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily float Character\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\char`\"{}get\+Speed\char`\"{}  \char`\"{}get the speed of character\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}float\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCharacter_aa7ac14465f088f97e955be6a352a5e34}\label{classCharacter_aa7ac14465f088f97e955be6a352a5e34}} 
+\index{Character@{Character}!set\+Direction@{set\+Direction}}
+\index{set\+Direction@{set\+Direction}!Character@{Character}}
+\subsubsection{\texorpdfstring{set\+Direction()}{setDirection()}}
+{\footnotesize\ttfamily void Character\+::set\+Direction (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2i}]{direction }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}set the direction of the chracters\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction object} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCharacter_aba54445fcae47eff401d4c226675d9b4}\label{classCharacter_aba54445fcae47eff401d4c226675d9b4}} 
+\index{Character@{Character}!set\+Maze@{set\+Maze}}
+\index{set\+Maze@{set\+Maze}!Character@{Character}}
+\subsubsection{\texorpdfstring{set\+Maze()}{setMaze()}}
+{\footnotesize\ttfamily void Character\+::set\+Maze (\begin{DoxyParamCaption}\item[{\hyperlink{classMaze}{Maze} $\ast$}]{maze }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}set the maze map\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maze object} & \char`\"{}create the maze map by assigning maze param to local maze attribute\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCharacter_a0569c1aa9c37e7436083c0f301a205be}\label{classCharacter_a0569c1aa9c37e7436083c0f301a205be}} 
+\index{Character@{Character}!set\+Speed@{set\+Speed}}
+\index{set\+Speed@{set\+Speed}!Character@{Character}}
+\subsubsection{\texorpdfstring{set\+Speed()}{setSpeed()}}
+{\footnotesize\ttfamily void Character\+::set\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}set the speed\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+: float type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCharacter_a9d20989cb4d1c826f98f9d6f7c9f63a6}\label{classCharacter_a9d20989cb4d1c826f98f9d6f7c9f63a6}} 
+\index{Character@{Character}!update@{update}}
+\index{update@{update}!Character@{Character}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Character\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}update vitual implementation\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta of Time object} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classGhost_a0ac45a3d870db2f286645e909e868738}{Ghost}, and \hyperlink{classPacWoman_a82b822a1b09b749568031b76f62ddae7}{Pac\+Woman}.
+
+\mbox{\Hypertarget{classCharacter_a53d02c2b1c914990e51e0fb84913d151}\label{classCharacter_a53d02c2b1c914990e51e0fb84913d151}} 
+\index{Character@{Character}!will\+Move@{will\+Move}}
+\index{will\+Move@{will\+Move}!Character@{Character}}
+\subsubsection{\texorpdfstring{will\+Move()}{willMove()}}
+{\footnotesize\ttfamily bool Character\+::will\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\char`\"{}willmove function\char`\"{}  \char`\"{}object will move indicator\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}boolean\char`\"{} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Character_8hpp}{Character.\+hpp}\item 
+Character.\+cpp\end{DoxyCompactItemize}

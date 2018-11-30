@@ -1,0 +1,10 @@
+digraph "Ghost.hpp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node8 [label="Ghost.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="GameState.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$GameState_8hpp.html",tooltip="\"Game state class header\" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Game.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Game_8hpp.html",tooltip="\"Game class\" "];
+}

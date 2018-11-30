@@ -1,0 +1,155 @@
+\hypertarget{classGame}{}\section{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+\char`\"{}\+Game Class\char`\"{}  \char`\"{} the entry point to our program; called from main.\+cpp\char`\"{}  
+
+
+
+
+{\ttfamily \#include $<$Game.\+hpp$>$}
+
+
+
+Collaboration diagram for Game\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65}} 
+\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}game construtor and destructor\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}} 
+\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Game Constructor\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{run} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}run the game command\char`\"{} \end{DoxyCompactList}\item 
+sf\+::\+Font \& \hyperlink{classGame_a813ff20fa498389e4bb120090803676b}{get\+Font} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}get\+Font\char`\"{} \end{DoxyCompactList}\item 
+sf\+::\+Texture \& \hyperlink{classGame_a4eb607b287a0aa0238339454399edc8b}{get\+Logo} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}get\+Logo\char`\"{} \end{DoxyCompactList}\item 
+sf\+::\+Texture \& \hyperlink{classGame_aa231abe1d7a36b55599ca459c815b2a5}{get\+Texture} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}get\+Texture\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classGame_a01f4a9f62ec168cc507b45c26cba8d7b}{change\+Game\+State} (Game\+State\+::\+State game\+State)
+\begin{DoxyCompactList}\small\item\em \char`\"{}change the game state\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_a22a61b5ea27c609be8cf2724c33d7ae5}\label{classGame_a22a61b5ea27c609be8cf2724c33d7ae5}} 
+sf\+::\+Render\+Window {\bfseries m\+\_\+window}
+\item 
+\mbox{\Hypertarget{classGame_acb27bf091b20840bcc0d1afab9cfdd9a}\label{classGame_acb27bf091b20840bcc0d1afab9cfdd9a}} 
+\hyperlink{classGameState}{Game\+State} $\ast$ {\bfseries m\+\_\+current\+State}
+\item 
+\mbox{\Hypertarget{classGame_afa41b50e60afb028ef72dc1a0f5f3c14}\label{classGame_afa41b50e60afb028ef72dc1a0f5f3c14}} 
+std\+::array$<$ \hyperlink{classGameState}{Game\+State} $\ast$, Game\+State\+::\+Count $>$ {\bfseries m\+\_\+game\+States}
+\item 
+\mbox{\Hypertarget{classGame_af5c5c39d0eabe68c3bfff3509900a489}\label{classGame_af5c5c39d0eabe68c3bfff3509900a489}} 
+sf\+::\+Font {\bfseries m\+\_\+font}
+\item 
+\mbox{\Hypertarget{classGame_a096d1db71ac79951a635b7ffb6266ca3}\label{classGame_a096d1db71ac79951a635b7ffb6266ca3}} 
+sf\+::\+Texture {\bfseries m\+\_\+logo}
+\item 
+\mbox{\Hypertarget{classGame_ab9b34c0dd4f04f242c21a3104d20bf4a}\label{classGame_ab9b34c0dd4f04f242c21a3104d20bf4a}} 
+sf\+::\+Texture {\bfseries m\+\_\+texture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Game Class\char`\"{}  \char`\"{} the entry point to our program; called from main.\+cpp\char`\"{} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_a01f4a9f62ec168cc507b45c26cba8d7b}\label{classGame_a01f4a9f62ec168cc507b45c26cba8d7b}} 
+\index{Game@{Game}!change\+Game\+State@{change\+Game\+State}}
+\index{change\+Game\+State@{change\+Game\+State}!Game@{Game}}
+\subsubsection{\texorpdfstring{change\+Game\+State()}{changeGameState()}}
+{\footnotesize\ttfamily void Game\+::change\+Game\+State (\begin{DoxyParamCaption}\item[{Game\+State\+::\+State}]{game\+State }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}change the game state\char`\"{} 
+
+\char`\"{}general gamestate function\+: Change the game state\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new game state} & \\
+\hline
+{\em gamestate of type gamestate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\char`\"{}void\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a813ff20fa498389e4bb120090803676b}\label{classGame_a813ff20fa498389e4bb120090803676b}} 
+\index{Game@{Game}!get\+Font@{get\+Font}}
+\index{get\+Font@{get\+Font}!Game@{Game}}
+\subsubsection{\texorpdfstring{get\+Font()}{getFont()}}
+{\footnotesize\ttfamily sf\+::\+Font \& Game\+::get\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}get\+Font\char`\"{} 
+
+\char`\"{}\+Get Font\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Font Type\char`\"{}
+
+\char`\"{}\+Font type\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a4eb607b287a0aa0238339454399edc8b}\label{classGame_a4eb607b287a0aa0238339454399edc8b}} 
+\index{Game@{Game}!get\+Logo@{get\+Logo}}
+\index{get\+Logo@{get\+Logo}!Game@{Game}}
+\subsubsection{\texorpdfstring{get\+Logo()}{getLogo()}}
+{\footnotesize\ttfamily sf\+::\+Texture \& Game\+::get\+Logo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}get\+Logo\char`\"{} 
+
+\char`\"{}\+Get logo\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Logo Type\char`\"{}
+
+\char`\"{}\+Logo type -\/ png\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_aa231abe1d7a36b55599ca459c815b2a5}\label{classGame_aa231abe1d7a36b55599ca459c815b2a5}} 
+\index{Game@{Game}!get\+Texture@{get\+Texture}}
+\index{get\+Texture@{get\+Texture}!Game@{Game}}
+\subsubsection{\texorpdfstring{get\+Texture()}{getTexture()}}
+{\footnotesize\ttfamily sf\+::\+Texture \& Game\+::get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}get\+Texture\char`\"{} 
+
+\char`\"{}\+Get texture\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+Texture Type\char`\"{}
+
+\char`\"{}texture of sf\+::texture type\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}\label{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}} 
+\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}run the game command\char`\"{} 
+
+\char`\"{}\+Game\+: run\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}void\char`\"{} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Game_8hpp}{Game.\+hpp}\item 
+Game.\+cpp\end{DoxyCompactItemize}

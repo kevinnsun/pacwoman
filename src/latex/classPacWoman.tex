@@ -1,0 +1,123 @@
+\hypertarget{classPacWoman}{}\section{Pac\+Woman Class Reference}
+\label{classPacWoman}\index{Pac\+Woman@{Pac\+Woman}}
+
+
+Inheritance diagram for Pac\+Woman\+:
+% FIG 0
+
+
+Collaboration diagram for Pac\+Woman\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPacWoman_a21e0c1f228e09eb07199eac5e2f0ba77}{Pac\+Woman} (sf\+::\+Texture \&texture)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Pacwoman public header\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPacWoman_a01ee588e34ac3cb29f96c75dd72fa44e}\label{classPacWoman_a01ee588e34ac3cb29f96c75dd72fa44e}} 
+void \hyperlink{classPacWoman_a01ee588e34ac3cb29f96c75dd72fa44e}{die} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Pacwoman death\char`\"{}  \char`\"{} death animation play time for pacwoman\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{classPacWoman_acbd14fdccea1d7d02e91327f0a659979}{is\+Dying} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Pacwoman death\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPacWoman_a4bccfb4c24228fcc204e139171e7d221}\label{classPacWoman_a4bccfb4c24228fcc204e139171e7d221}} 
+bool \hyperlink{classPacWoman_a4bccfb4c24228fcc204e139171e7d221}{is\+Dead} () const
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Pacwoman death\char`\"{}  \char`\"{} death animation play time for pacwoman\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{classPacWoman_a82b822a1b09b749568031b76f62ddae7}{update} (sf\+::\+Time delta)
+\begin{DoxyCompactList}\small\item\em \char`\"{}update for pacwoman\char`\"{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPacWoman_a2e6d72969b47ef63110e26861172f098}\label{classPacWoman_a2e6d72969b47ef63110e26861172f098}} 
+void \hyperlink{classPacWoman_a2e6d72969b47ef63110e26861172f098}{reset} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Pacwoman reset\char`\"{}  \char`\"{} rest animation play time for pacwoman after death\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPacWoman_a43d3869ad2b68f87d142525409cadf09}{draw} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em \char`\"{}draw function\char`\"{}  \char`\"{}draw pacwoman using rendering states\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPacWoman_aa8fb5636d12e5bfb5ce7b208092ddf4e}\label{classPacWoman_aa8fb5636d12e5bfb5ce7b208092ddf4e}} 
+bool {\bfseries m\+\_\+is\+Dying}
+\item 
+\mbox{\Hypertarget{classPacWoman_a2e20dea9a9e75f905f9a928604ad4872}\label{classPacWoman_a2e20dea9a9e75f905f9a928604ad4872}} 
+bool {\bfseries m\+\_\+is\+Dead}
+\item 
+\mbox{\Hypertarget{classPacWoman_a0b7112fcc4e8b26b19c97606c0b92dbb}\label{classPacWoman_a0b7112fcc4e8b26b19c97606c0b92dbb}} 
+sf\+::\+Sprite {\bfseries m\+\_\+visual}
+\item 
+\mbox{\Hypertarget{classPacWoman_adfa2315b62433e0532e843675c80963f}\label{classPacWoman_adfa2315b62433e0532e843675c80963f}} 
+\hyperlink{classAnimator}{Animator} {\bfseries m\+\_\+run\+Animator}
+\item 
+\mbox{\Hypertarget{classPacWoman_a5314f24950aa55fb46377934230f4b1c}\label{classPacWoman_a5314f24950aa55fb46377934230f4b1c}} 
+\hyperlink{classAnimator}{Animator} {\bfseries m\+\_\+die\+Animator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPacWoman_a21e0c1f228e09eb07199eac5e2f0ba77}\label{classPacWoman_a21e0c1f228e09eb07199eac5e2f0ba77}} 
+\index{Pac\+Woman@{Pac\+Woman}!Pac\+Woman@{Pac\+Woman}}
+\index{Pac\+Woman@{Pac\+Woman}!Pac\+Woman@{Pac\+Woman}}
+\subsubsection{\texorpdfstring{Pac\+Woman()}{PacWoman()}}
+{\footnotesize\ttfamily Pac\+Woman\+::\+Pac\+Woman (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Pacwoman public header\char`\"{} 
+
+\char`\"{}\+Pac\+Woman\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfml texture} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPacWoman_a43d3869ad2b68f87d142525409cadf09}\label{classPacWoman_a43d3869ad2b68f87d142525409cadf09}} 
+\index{Pac\+Woman@{Pac\+Woman}!draw@{draw}}
+\index{draw@{draw}!Pac\+Woman@{Pac\+Woman}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Pac\+Woman\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\char`\"{}draw function\char`\"{}  \char`\"{}draw pacwoman using rendering states\char`\"{} 
+
+\char`\"{}draw method for pacwoman \char`\"{}  \char`\"{}visual for pacwoman\char`\"{} \mbox{\Hypertarget{classPacWoman_acbd14fdccea1d7d02e91327f0a659979}\label{classPacWoman_acbd14fdccea1d7d02e91327f0a659979}} 
+\index{Pac\+Woman@{Pac\+Woman}!is\+Dying@{is\+Dying}}
+\index{is\+Dying@{is\+Dying}!Pac\+Woman@{Pac\+Woman}}
+\subsubsection{\texorpdfstring{is\+Dying()}{isDying()}}
+{\footnotesize\ttfamily bool Pac\+Woman\+::is\+Dying (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\char`\"{}\+Pacwoman death\char`\"{} 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}dying state for pacwoman\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPacWoman_a82b822a1b09b749568031b76f62ddae7}\label{classPacWoman_a82b822a1b09b749568031b76f62ddae7}} 
+\index{Pac\+Woman@{Pac\+Woman}!update@{update}}
+\index{update@{update}!Pac\+Woman@{Pac\+Woman}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Pac\+Woman\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Time}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\char`\"{}update for pacwoman\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sf time} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classCharacter_a9d20989cb4d1c826f98f9d6f7c9f63a6}{Character}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PacWoman_8hpp}{Pac\+Woman.\+hpp}\item 
+Pac\+Woman.\+cpp\end{DoxyCompactItemize}
